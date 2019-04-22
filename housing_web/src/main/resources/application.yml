@@ -1,0 +1,22 @@
+server:
+  port: 8082
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+  mongodb:
+    uri: mongodb://name:password@//192.168.101.218:27017/test
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: hous-web
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: localhost:9300
+      repositories:
+        enabled: true
