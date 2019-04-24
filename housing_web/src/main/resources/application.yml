@@ -7,6 +7,12 @@ eureka:
   mongodb:
     uri: mongodb://name:password@//192.168.101.218:27017/test
 spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 500
   rabbitmq:
     host: localhost
     port: 5672

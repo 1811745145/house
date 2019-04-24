@@ -1,7 +1,10 @@
 package com.jk.pojo;
 
 
-public class HousBean {
+import java.io.Serializable;
+
+public class HousBean implements Serializable {
+    private static final long serialVersionUID = -3729613519665696954L;
     private Integer id;
     private String housName;
     private String housImg;

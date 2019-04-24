@@ -24,6 +24,15 @@ public class GuanZhuBean {
     private String housZhuangxiu;
     private String housPingmi;
     private String housCaiZhi;
+    private Integer userId;
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
 
     public Integer getId() {
         return id;
@@ -187,7 +196,7 @@ public class GuanZhuBean {
 
     @Override
     public String toString() {
-        return "HousBean{" +
+        return "GuanZhuBean{" +
                 "id=" + id +
                 ", housName='" + housName + '\'' +
                 ", housImg='" + housImg + '\'' +
@@ -208,6 +217,7 @@ public class GuanZhuBean {
                 ", housZhuangxiu='" + housZhuangxiu + '\'' +
                 ", housPingmi='" + housPingmi + '\'' +
                 ", housCaiZhi='" + housCaiZhi + '\'' +
+                ", userId=" + userId +
                 '}';
     }
 }

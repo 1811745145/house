@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+server:
+  port: 8088
+spring:
+  application:
+    name: service-config
+    #配置git远程仓库地址
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/1811745145/houseConfig.git
+          #配置 配置文件所在git远程库的文件夹名称
+          search-paths: springcloud/**
+          #如果项目是私有项目 需要配置git远程库用户名密码
+          username: 1811745145
+          password: qhp19991024..
+
+
